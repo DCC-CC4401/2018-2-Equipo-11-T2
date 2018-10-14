@@ -62,3 +62,11 @@
         padding-left: 64px;
     }
 }
+
+.state-abierta {
+    color: green;
+}
+
+.state-cerrada {
+    color: red;
+}

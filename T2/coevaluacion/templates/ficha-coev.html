@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <h4 class="header center black-text">Ficha Coevaluación</h4>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s4"><a href="#datos">Datos</a></li>
+                </ul>
+            </div>
+
+            <div class="col s12">
+                <table>
+                    <tbody>
+                    <tr>
+                        <th>Nombre Curso:</th>
+                        <td>UnCurso</td>
+                    </tr>
+                    <tr>
+                        <th>Estado:</th>
+                        <td class="state-abierta">Abierta</td>
+                    </tr>
+                    <tr>
+                        <th>Inicio:</th>
+                        <td>14 de Octubre a las 00:00</td>
+                    </tr>
+                    <tr>
+                        <th>Fin:</th>
+                        <td>20 de Octubre a las 23:59</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="center-align" style="padding-top: 50px">
+                    <button class="btn waves-effect waves-light">
+                        Responder Encuesta/Ver Resultados
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
