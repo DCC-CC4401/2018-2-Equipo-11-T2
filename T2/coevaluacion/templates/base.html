@@ -20,13 +20,12 @@
             <div class="nav-wrapper">
                 <a href="#!" class="brand-logo left">Bienvenido Conchetumare!</a>
                 <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle hide-on-large-only"><i class="material-icons">menu</i></a>
-                <ul class="right">
+                <ul class="right hide-on-med-and-down">
                     <li>
                         <form>
                             <div class="input-field">
                                 <input id="search" type="search" required>
                                 <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                                <i class="material-icons">close</i>
                             </div>
                         </form>
                     </li>
@@ -38,9 +37,32 @@
           </nav>
         </div>
 
-        <ul id="nav-mobile" class="sidenav sidenav-fixed" style="margin-top: 64px;">
-            <li class="bold"><a href="#" class="waves-effect waves-teal">Clase 1</a></li>
-            <li class="bold"><a href="#" class="waves-effect waves-teal">Clase 1</a></li>
+        <ul id="nav-mobile" class="sidenav sidenav-fixed">
+            <li class="hide-on-large-only hide-on-extra-large-only">
+                <form>
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons" style="margin-left: 10px;">search</i></label>
+                    </div>
+
+                </form>
+            </li>
+
+            <li class="bold">
+                <a href="#" class="waves-effect waves-teal" style="height: auto;">
+                    <p class="course-top">Clase 1</p>
+                    <p class="course-mid">Profesor</p>
+                    <p class="course-bottom">Sección 1</p>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#" class="waves-effect waves-teal" style="height: auto;">
+                    <p class="course-top">Clase 2</p>
+                    <p class="course-mid">Profesor Auxiliar</p>
+                    <p class="course-bottom">Sección 2</p>
+                </a>
+            </li>
+            <li class="hide-on-large-only hide-on-extra-large-only"><a href="#"><i class="material-icons left">power_settings_new</i>Logout</a></li>
         </ul>
 
     </header>
