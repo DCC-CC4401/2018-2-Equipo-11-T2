@@ -9,3 +9,7 @@ def index(request):
 
 def profile(request):
     return render(request, 'profile.html')
+
+
+def course(request):
+    return render(request, 'course.html')
