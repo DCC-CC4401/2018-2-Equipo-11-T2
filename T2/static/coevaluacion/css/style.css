@@ -1,0 +1,64 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.sidenav-fixed {
+    margin-top: 64px;
+}
+
+.course-top {
+    margin-bottom: -22px;
+}
+
+
+.course-mid {
+    margin-top: -22px;
+    margin-bottom: -22px;
+}
+
+.course-bottom {
+    margin-top: -22px;
+}
+
+@media (min-width: 991px) {
+    main {
+        padding-left: 295px;
+    }
+
+    footer {
+        padding-left: 295px;
+    }
+}
+
+@media (max-width: 450px) {
+    nav .brand-logo {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    nav .brand-logo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .brand-logo {
+        margin-left: 64px;
+    }
+
+    .input-field input[type=search] {
+        padding-left: 64px;
+    }
+}

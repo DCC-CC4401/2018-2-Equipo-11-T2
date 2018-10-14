@@ -1,24 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Título</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Sistema de Coevaluaciones</title>
 
-    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
-
-
-    <link rel="stylesheet" href="../../static/css/login.css">
-
-    <script src="../../static/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- CSS  -->
+    {% load static %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{% static "coevaluacion/css/materialize.min.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{% static "coevaluacion/css/style.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-    <div class="container">
+
+
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo left">Bienvenido Conchetumare!</a>
+                <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle hide-on-large-only"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" required>
+                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            </div>
+                        </form>
+                    </li>
+                    <li><a href="#"><i class="material-icons right">power_settings_new</i>Logout</a></li>
+                </ul>
+
+
+            </div>
+          </nav>
+        </div>
+
+        <ul id="nav-mobile" class="sidenav sidenav-fixed">
+            <li class="hide-on-large-only hide-on-extra-large-only">
+                <form>
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons" style="margin-left: 10px;">search</i></label>
+                    </div>
+
+                </form>
+            </li>
+
+            <li class="bold">
+                <a href="#" class="waves-effect waves-teal" style="height: auto;">
+                    <p class="course-top">Clase 1</p>
+                    <p class="course-mid">Profesor</p>
+                    <p class="course-bottom">Sección 1</p>
+                </a>
+            </li>
+            <li class="bold">
+                <a href="#" class="waves-effect waves-teal" style="height: auto;">
+                    <p class="course-top">Clase 2</p>
+                    <p class="course-mid">Profesor Auxiliar</p>
+                    <p class="course-bottom">Sección 2</p>
+                </a>
+            </li>
+            <li class="hide-on-large-only hide-on-extra-large-only"><a href="#"><i class="material-icons left">power_settings_new</i>Logout</a></li>
+        </ul>
+
+    </header>
+
+    <main>
+        <!-- TODO: Lean acerca del sistema de divs de materialize -->
+
         {% block content %}
-
         {% endblock %}
-    </div>
 
+    </main>
+    <footer class="page-footer gray">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Ingeniería de Software I</h5>
+                    <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aut autem dolorem doloremque ducimus eos exercitationem facilis incidunt ipsum libero molestias quas qui quidem, quisquam quos voluptas voluptatem? Expedita.</p>
+
+
+                </div>
+                <div class="col l6 s12">
+                    <h5 class="white-text">Equipo Docente</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Profe</a></li>
+                        <li><a class="white-text" href="#!">Aux</a></li>
+                        <li><a class="white-text" href="#!">Ayudante 1</a></li>
+                        <li><a class="white-text" href="#!">Ayudante 2</a></li>
+                        <li><a class="white-text" href="#!">Ayudante 3</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Created by <i class="material-icons left">copyright</i><a class="orange-text text-lighten-3" href="#">Tiburoncín Hu Ha Ha</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{% static "coevaluacion/js/materialize.min.js" %}"></script>
+    <script src="{% static "coevaluacion/js/init.js" %}"></script>
 </body>
 </html>
