@@ -12,8 +12,6 @@
     <link href="{% static "coevaluacion/css/style.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-
-
     <header>
         <div class="navbar-fixed">
             <nav>
@@ -47,21 +45,52 @@
 
                 </form>
             </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold"><a class="collapsible-header waves-effect waves-teal">Administrar</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="waves-effect waves-teal" style="height: auto;">
+                                        Perfil
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="waves-effect waves-teal" style="height: auto;">
+                                        Cursos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="waves-effect waves-teal" style="height: auto;">
+                                        Coevaluaciones
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header waves-effect waves-teal">Mis Cursos</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="waves-effect waves-teal" style="height: auto;">
+                                        <p class="course-top">Clase 1</p>
+                                        <p class="course-mid">Profesor</p>
+                                        <p class="course-bottom">Sección 1</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="waves-effect waves-teal" style="height: auto;">
+                                        <p class="course-top">Clase 2</p>
+                                        <p class="course-mid">Profesor Auxiliar</p>
+                                        <p class="course-bottom">Sección 2</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
 
-            <li class="bold">
-                <a href="#" class="waves-effect waves-teal" style="height: auto;">
-                    <p class="course-top">Clase 1</p>
-                    <p class="course-mid">Profesor</p>
-                    <p class="course-bottom">Sección 1</p>
-                </a>
-            </li>
-            <li class="bold">
-                <a href="#" class="waves-effect waves-teal" style="height: auto;">
-                    <p class="course-top">Clase 2</p>
-                    <p class="course-mid">Profesor Auxiliar</p>
-                    <p class="course-bottom">Sección 2</p>
-                </a>
-            </li>
             <li class="hide-on-large-only hide-on-extra-large-only"><a href="#"><i class="material-icons left">power_settings_new</i>Logout</a></li>
         </ul>
 
