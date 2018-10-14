@@ -17,17 +17,17 @@
     margin-top: 64px;
 }
 
-.course-top {
+.less-margin-bottom {
     margin-bottom: -22px;
 }
 
 
-.course-mid {
+.less-margin-top-bottom {
     margin-top: -22px;
     margin-bottom: -22px;
 }
 
-.course-bottom {
+.less-margin-top {
     margin-top: -22px;
 }
 
