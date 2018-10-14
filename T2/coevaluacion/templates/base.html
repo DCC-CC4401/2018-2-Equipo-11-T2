@@ -11,15 +11,13 @@
     <link href="{% static "coevaluacion/css/materialize.min.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="{% static "coevaluacion/css/style.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-    <!-- JS -->
-    <scrpit src="{% static "coevaluacion/js/jquery-3.3.1.min.js" %}"></scrpit>
 </head>
 <body>
     <header>
         <div class="navbar-fixed">
             <nav>
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo left">Bienvenido Conchetumare!</a>
+                <a href="#" class="brand-logo left">Bienvenido Conchetumare!</a>
                 <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle hide-on-large-only"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li>
@@ -104,7 +102,8 @@
 
         {% block content %}
         {% endblock %}
-
+    <br>
+    <br>
     </main>
     <footer class="page-footer gray">
         <div class="container">
@@ -137,7 +136,7 @@
 
 
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <scrpit src="{% static "coevaluacion/js/jquery-3.3.1.min.js" %}"></scrpit>
     <script src="{% static "coevaluacion/js/materialize.min.js" %}"></script>
     <script src="{% static "coevaluacion/js/init.js" %}"></script>
 </body>
