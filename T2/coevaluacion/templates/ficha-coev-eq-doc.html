@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <h4 class="header center black-text">Ficha Coevaluación</h4>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s4"><a href="#datos">Datos</a></li>
+                    <li class="tab col s4"><a href="#enviados">Enviados</a></li>
+                    <li class="tab col s4"><a href="#pendientes">Pendientes</a></li>
+                </ul>
+            </div>
+
+            <div id="datos" class="col s12">
+                <table>
+                    <tbody>
+                    <tr>
+                        <th>Nombre Curso:</th>
+                        <td>UnCurso</td>
+                    </tr>
+                    <tr>
+                        <th>Estado:</th>
+                        <td class="state-abierta">Abierta</td>
+                    </tr>
+                    <tr>
+                        <th>Inicio:</th>
+                        <td>14 de Octubre a las 00:00</td>
+                    </tr>
+                    <tr>
+                        <th>Fin:</th>
+                        <td>20 de Octubre a las 23:59</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="row">
+                    <form action="#" class="col s12">
+
+                        <b>Modificar Fecha Fin:</b>
+
+                        <div class="input-field inline" style="margin-left: 12px;">
+                            <input id="modify-end-date" type="date" class="validate">
+                            <label for="modify-end-date">Nueva Fecha Final</label>
+                        </div>
+                        <button class="btn waves-effect waves-light" type="submit" name="action" style="margin-left: 50px">
+                            Actualizar Fecha
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col s6">
+                        <div class="center-align" style="padding-top: 50px">
+                            <button class="btn waves-effect waves-light">
+                                Ver Encuesta
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="center-align" style="padding-top: 50px">
+                            <button class="btn waves-effect waves-light">
+                                Modificar Encuesta
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center-align" style="padding-top: 50px">
+                        <button class="btn waves-effect waves-light">
+                            Exportar Resultados
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="enviados" class="col s12">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>Cárcamo, Martín</td>
+                        <td>9.876.543-2</td>
+                        <td>Grupo1: NombreGrupo</td>
+                        <td><a href="#">ver</a></td>
+                    </tr>
+                    <tr>
+                        <td>Stark, Anthony</td>
+                        <td>12.465.468-5</td>
+                        <td>Grupo4: Grupooo4</td>
+                        <td><a href="#">ver</a></td>
+                    </tr>
+                    <tr>
+                        <td>Rogers, Steve</td>
+                        <td>20.235.546-5</td>
+                        <td>Grupo2: Viva América</td>
+                        <td><a href="#">ver</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="pendientes" class="col s12">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>Parker, Peter</td>
+                        <td>22.215.246-5</td>
+                        <td>Grupo4: Grupooo4</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Stark, Anthony</td>
+                        <td>12.465.468-5</td>
+                        <td>Grupo4: Grupooo4</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Rogers, Steve</td>
+                        <td>20.235.546-5</td>
+                        <td>Grupo2: Viva América</td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
