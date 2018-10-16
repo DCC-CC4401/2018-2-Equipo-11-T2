@@ -7,5 +7,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('profile/', views.profile, name='profile'),
     path('ficha-coev/', views.ficha_coev, name='ficha_coev'),
-    path('course/', views.course, name='course')
+    path('course/teacher/', views.course_teacher_view, name='teacher_course'),
+    path('course/student/', views.course_student_view, name="student_course")
 ]
