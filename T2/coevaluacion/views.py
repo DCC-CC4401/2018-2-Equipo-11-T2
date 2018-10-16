@@ -14,6 +14,9 @@ def profile(request):
 def ficha_coev(request):
     return render(request, 'ficha-coev.html')
 
+def ficha_coev_eq_doc(request):
+    return render(request, 'ficha-coev-eq-doc.html')
+
 
 def course_teacher_view(request):
     return render(request, 'course-teacher-view.html')
