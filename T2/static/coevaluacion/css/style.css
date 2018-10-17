@@ -113,9 +113,9 @@
     background-color: #ffffff;
     color: #000000;
     text-line-through-color: #000000;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
+    border-right: 1px solid #9fa8da;
+    border-top: 1px solid #9fa8da;
+    border-left: 1px solid #9fa8da;
 } /*Background and text color when a tab is active*/
 
 .tabs .tab a.disabled {
@@ -143,4 +143,39 @@
 
 .card-content {
     color:  #000000;
+}
+
+
+.input-field {
+    background-color: #3f51b5;
+    color: #ffffff !important;
+    border-left: 1px solid midnightblue;
+    border-right: 1px solid midnightblue;
+}
+.input-field:hover {
+    background-color: #5c6bc0;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: white;
+  opacity: 1;
+}
+
+.select-area {
+    background-color: #3f51b5;
+    color: #ffffff !important;
+}
+
+.select-area:hover {
+    background-color: #5c6bc0;
 }
