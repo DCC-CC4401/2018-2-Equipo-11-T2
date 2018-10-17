@@ -31,6 +31,11 @@
     margin-top: -22px;
 }
 
+.sidenav {
+    width: 15%;
+}
+
+
 @media (min-width: 991px) {
     main {
         padding-left: 295px;

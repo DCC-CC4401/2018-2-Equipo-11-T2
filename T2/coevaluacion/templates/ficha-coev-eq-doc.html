@@ -37,47 +37,49 @@
                     </tr>
                     </tbody>
                 </table>
-                <div class="row">
-                    <form action="#" class="col s12">
 
-                        <b>Modificar Fecha Fin:</b>
+                <div class="row">
+                <form action="#" class="col s12">
 
-                        <div class="input-field inline" style="margin-left: 12px;">
-                            <input id="modify-end-date" type="datetime-local" class="validate">
-                        </div>
-                        <button class="btn waves-effect waves-light" type="submit" name="action" style="margin-left: 50px">
-                            Actualizar Fecha
-                            <i class="material-icons right">send</i>
-                        </button>
-                    </form>
-                </div>
-                <div class="row">
-                    <div class="col s6">
-                        <div class="center-align" style="padding-top: 50px">
-                            <button class="btn waves-effect waves-light">
-                                Ver Encuesta
-                                <i class="material-icons right">send</i>
-                            </button>
-                        </div>
+                    <b style=" margin-right: 3%;">Modificar Fecha Fin:</b>
+
+                    <div class="input-field inline" style="width: 23%; margin-right: 3%;">
+                        <input id="modify-end-date" type="text" class="datepicker">
                     </div>
-                    <div class="col s6">
-                        <div class="center-align" style="padding-top: 50px">
-                            <button class="btn waves-effect waves-light">
-                                Modificar Encuesta
-                                <i class="material-icons right">send</i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="center-align" style="padding-top: 50px">
-                        <button class="btn waves-effect waves-light">
-                            Exportar Resultados
-                            <i class="material-icons right">send</i>
-                        </button>
-                    </div>
-                </div>
+                    <button class="btn waves-effect waves-light" type="submit" name="action" style=" margin-right: 1%;">
+                        Actualizar Fecha
+                        <i class="material-icons right">date_range</i>
+                    </button>
+                    <!-- Dropdown Trigger -->
+                   <a class='dropdown-trigger btn' href='#' data-target='poll-dropdown'>Más Opciones</a>
+                </form>
+
+
+
+                <!-- Dropdown Structure -->
+                <ul id='poll-dropdown' class='dropdown-content'>
+                    <li>
+                        <a href="#!">
+                            Ver Encuesta
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            Modificar Encuesta
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            Descargar Resultados
+
+                        </a>
+                    </li>
+
+                </ul>
             </div>
+            </div>
+
+
 
             <div id="enviados" class="col s12">
                 <table class="highlight responsive-table">
