@@ -4,7 +4,8 @@ from . import views
 from django.urls import path
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.login, name='login'),
+    path('landing-page/',  views.index, name='index'),
     path('profile/', views.profile, name='profile'),
     path('ficha-coev/', views.ficha_coev, name='ficha_coev'),
     path('ficha-coev-eq-doc/', views.ficha_coev_eq_doc, name='ficha_coev_eq_doc'),

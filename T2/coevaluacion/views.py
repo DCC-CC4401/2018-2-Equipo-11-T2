@@ -24,3 +24,7 @@ def course_teacher_view(request):
 
 def course_student_view(request):
     return render(request, 'course-student-view.html')
+
+
+def login(request):
+    return render(request, 'login.html')
