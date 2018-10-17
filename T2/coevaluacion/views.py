@@ -14,8 +14,10 @@ def profile(request):
 def profile_student(request):
     return render(request, 'profile-student.html')
 
+
 def ficha_coev(request):
     return render(request, 'ficha-coev.html')
+
 
 def ficha_coev_eq_doc(request):
     return render(request, 'ficha-coev-eq-doc.html')
