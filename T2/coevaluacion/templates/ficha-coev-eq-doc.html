@@ -43,8 +43,7 @@
                         <b>Modificar Fecha Fin:</b>
 
                         <div class="input-field inline" style="margin-left: 12px;">
-                            <input id="modify-end-date" type="date" class="validate">
-                            <label for="modify-end-date">Nueva Fecha Final</label>
+                            <input id="modify-end-date" type="datetime-local" class="validate">
                         </div>
                         <button class="btn waves-effect waves-light" type="submit" name="action" style="margin-left: 50px">
                             Actualizar Fecha
@@ -81,7 +80,14 @@
             </div>
 
             <div id="enviados" class="col s12">
-                <table>
+                <table class="highlight responsive-table">
+                    <thead>
+                    <tr>
+                        <th>Nombre Alumno</th>
+                        <th>RUT Alumno</th>
+                        <th>Grupo</th>
+                    </tr>
+                    </thead>
                     <tbody>
                     <tr>
                         <td>Cárcamo, Martín</td>
@@ -106,7 +112,14 @@
             </div>
 
             <div id="pendientes" class="col s12">
-                <table>
+                <table class="highlight responsive-table">
+                    <thead>
+                    <tr>
+                        <th>Nombre Alumno</th>
+                        <th>RUT Alumno</th>
+                        <th>Grupo</th>
+                    </tr>
+                    </thead>
                     <tbody>
                     <tr>
                         <td>Parker, Peter</td>

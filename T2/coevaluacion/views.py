@@ -3,8 +3,8 @@ from django.shortcuts import render
 # Create your views here.
 
 
-def index(request):
-    return render(request, 'index.html')
+def landing_page(request):
+    return render(request, 'landing-page.html')
 
 
 def profile(request):
@@ -24,3 +24,7 @@ def course_teacher_view(request):
 
 def course_student_view(request):
     return render(request, 'course-student-view.html')
+
+
+def login(request):
+    return render(request, 'login.html')
