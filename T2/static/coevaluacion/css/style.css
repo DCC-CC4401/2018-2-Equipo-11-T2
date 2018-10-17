@@ -95,7 +95,7 @@
 
 
 .tabs {
-    background-color: ghostwhite;
+    background-color: #e8eaf6;
     /*border-color: midnightblue;*/
     /*border-right-color: midnightblue;*/
 }
@@ -105,7 +105,7 @@
 } /*Black color to the text*/
 
 .tabs .tab a:hover {
-    background-color: #ffffff;
+    background-color: #e0e0e0;
     color:#000;
 } /*Text color on hover*/
 
@@ -113,20 +113,34 @@
     background-color: #ffffff;
     color: #000000;
     text-line-through-color: #000000;
-    color
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
 } /*Background and text color when a tab is active*/
 
 .tabs .tab a.disabled {
     color: #000;
+    border-bottom: 1px solid;
 }
 .tabs .indicator {
-    background-color: midnightblue;
+    background-color: #ffffff;
 } /*Color of underline*/
 
 /*botones */
 .btn:hover {
     background-color: #2196f3;
+    /*#5c6bc0*/
 }
 .btn {
-    background-color: mediumblue;
+    background-color: #3f51b5;
+    border: 1px solid black;
+}
+
+/*tarjetas*/
+.card {
+    background-color: 	#e8eaf6;
+}
+
+.card-content {
+    color:  #000000;
 }
