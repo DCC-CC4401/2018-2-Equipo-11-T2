@@ -30,7 +30,6 @@
             <th>Curso</th>
             <th>Fecha Fin</th>
             <th>Estado</th>
-            <th></th>
         </tr>
         </thead>
 
@@ -40,70 +39,90 @@
             <td>CursoX</td>
             <td>DD/MM/YYYY</td>
             <td>Abierta</td>
-            <td><a href="#">Ver</a> </td>
+            <td>
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown-abierta'>Opciones</a>
+            </td>
         </tr>
         <tr>
             <td>Coevaluación 2</td>
             <td>CursoX</td>
             <td>DD/MM/YYYY</td>
             <td>Abierta</td>
-            <td><a href="#">Ver</a> </td>
+            <td>
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown-abierta'>Opciones</a>
+            </td>
         </tr>
         <tr>
             <td>Coevaluación 3</td>
             <td>CursoX</td>
             <td>DD/MM/YYYY</td>
             <td>Abierta</td>
-            <td><a href="#">Ver</a> </td>
+            <td>
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown-abierta'>Opciones</a>
+            </td>
         </tr>
         <tr>
             <td>Coevaluación 4</td>
             <td>CursoX</td>
             <td>DD/MM/YYYY</td>
             <td>Abierta</td>
-            <td><a href="#">Ver</a> </td>
+            <td>
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown-abierta'>Opciones</a>
+            </td>
         </tr>
         <tr>
             <td>Coevaluación 5</td>
             <td>CursoX</td>
             <td>DD/MM/YYYY</td>
             <td>Abierta</td>
-            <td><a href="#">Ver</a> </td>
+            <td>
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown-abierta'>Opciones</a>
+            </td>
         </tr>
         <tr>
             <td>Coevaluación 6</td>
             <td>CursoX</td>
             <td>DD/MM/YYYY</td>
             <td>Abierta</td>
-            <td><a href="#">Ver</a> </td>
+            <td>
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown-abierta'>Opciones</a>
+            </td>
         </tr>
         <tr>
             <td>Coevaluación 7</td>
             <td>CursoX</td>
             <td>DD/MM/YYYY</td>
             <td>Abierta</td>
-            <td><a href="#">Ver</a> </td>
+            <td>
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown-abierta'>Opciones</a>
+            </td>
         </tr>
         <tr>
             <td>Coevaluación 8</td>
             <td>CursoX</td>
             <td>DD/MM/YYYY</td>
             <td>Cerrada</td>
-            <td><a href="#">Ver</a> </td>
+            <td>
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown-cerrada'>Opciones</a>
+            </td>
         </tr>
         <tr>
             <td>Coevaluación 9</td>
             <td>CursoX</td>
             <td>DD/MM/YYYY</td>
             <td>Cerrada</td>
-            <td><a href="#">Ver</a> </td>
+            <td>
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown-cerrada'>Opciones</a>
+            </td>
         </tr>
         <tr>
             <td>Coevaluación 10</td>
             <td>CursoX</td>
             <td>DD/MM/YYYY</td>
             <td>Cerrada</td>
-            <td><a href="#">Ver</a> </td>
+            <td>
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown-cerrada'>Opciones</a>
+            </td>
         </tr>
 
         </tbody>
@@ -218,4 +237,14 @@
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agregar</a>
         </div>
     </div>
+
+        <!-- Dropdown Structure -->
+
+    <ul id='dropdown-cerrada' class='dropdown-content'>
+        <li><a href="#!">Ver</a></li>
+        <li><a href="#!">Publicar</a></li>
+    </ul>
+    <ul id='dropdown-abierta' class='dropdown-content'>
+        <li><a href="#!">Ver</a></li>
+    </ul>
 {% endblock %}
